@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
    # Sync folders
   config.vm.synced_folder ".", "/vagrant", disabled: true
   config.vm.synced_folder "vagrant_config", "/home/vagrant/config"
-  config.vm.synced_folder "projects", "/home/ubuntu/projects", :type => "nfs", mount_options: ["nolock,vers=3,udp,noatime,actimeo=1"]
+  config.vm.synced_folder "projects", "/home/vagrant/projects", :type => "nfs", mount_options: ["nolock,vers=3,udp,noatime,actimeo=1"]
 
 
   # Plugins
